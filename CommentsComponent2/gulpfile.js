@@ -23,7 +23,7 @@ gulp.task('default', process);
 
 function process(){
 
-    gutil.log(gutil.colors.red('Processo Iniciado'));
+    gutil.log(gutil.colors.red('Processando....'));
 
     b.bundle()
     .pipe(source('main.min.js'))
@@ -38,7 +38,5 @@ function process(){
     .pipe(concat('style.css'))
     .pipe(uglifycss())
     .pipe(gulp.dest('./public/css/'));    
-
-    gutil.log(gutil.colors.red('Processo Finalizado'));
 
 }
