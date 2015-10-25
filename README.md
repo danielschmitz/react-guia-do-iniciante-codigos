@@ -1,5 +1,5 @@
 
-[](https://s3.amazonaws.com/titlepages.leanpub.com/react-guia-do-iniciate/large?1445790221)
+[](images/large.jpg)
 
 Este é o código fonte do livro [React - O Guia do Iniciante](https://leanpub.com/react-guia-do-iniciate). 
 
@@ -18,7 +18,7 @@ Veja a evolução da criação do componente.Nesta obra criaremos no capítulo 2
 ![](images/02-004.png)
 ![](images/02-005.png)
 ![](images/02-006.png)
-![](images/02-007.png)
+
 
 
 
