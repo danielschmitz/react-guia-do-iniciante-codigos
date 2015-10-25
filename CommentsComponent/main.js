@@ -1,7 +1,7 @@
 
 var data = [
                     {author: "Ted", text: "First"},
-                    {author: "Daniel 2", text: "Hello World"}
+                    {author: "Daniel", text: "Hello World"}
     ];
 
 var Panel = React.createClass({
@@ -53,7 +53,7 @@ var CommentForm = React.createClass({
         return;
       }
 
-    //TODO: Precisa atualizar o DATA
+    this.props.onCommentSubmit({author:author, text:text});
 
     this.refs.author.value = '';
     this.refs.text.value = '';
@@ -79,14 +79,22 @@ var CommentForm = React.createClass({
   }
 });
 var CommentBox = React.createClass({
+   getInitialState: function() {
+    return {data: this.props.data};
+  },
+  handleCommentSubmit: function(comment){
+    var dataNew = this.state.data;
+    dataNew.push(comment)
+    this.setState({data:dataNew});
+  },
   render: function() {
     return (
       <div className="commentBox">
         <Panel title="Comments">
-            <CommentList data={this.props.data} />
+            <CommentList data={this.state.data} />
         </Panel>
         <Panel title="Add a Comment">
-            <CommentForm />
+            <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
         </Panel>
       </div>
     );
