@@ -24,6 +24,7 @@
     "gulp-uglifycss": "^1.0.4",
     "gulp-util": "^3.0.7",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.5.0"
   }
 }
