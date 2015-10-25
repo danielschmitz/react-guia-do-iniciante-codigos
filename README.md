@@ -7,8 +7,10 @@ Este é o código fonte do livro [React - O Guia do Iniciante](https://leanpub.c
 - [CommentsComponent](http://danielschmitz.github.io/react-guia-do-iniciante-codigos/CommentsComponent/) - Capítulo 2
 
 
-## Veja a evolução da criação do componente CommentsController
+## CommentsController
 
-Nesta obra criaremos no capítulo 2 um componente de comentários. A seguir mostramos algumas imagens do componente e sua evoulção estrutural:
+Veja a evolução da criação do componente. Nesta obra criaremos no capítulo 2 um componente de comentários. A seguir mostramos algumas imagens do componente e sua evoulção estrutural:
+
+![A definição de como será o componente](images/02-001.png)
 
 
