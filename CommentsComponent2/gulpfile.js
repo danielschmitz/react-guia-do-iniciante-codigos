@@ -34,7 +34,6 @@ gulp.task('default', function () {
         .pipe(concat('style.css'))
         .pipe(uglifycss())
         .pipe(gulp.dest('./public/css/'));
-
      
 
 });
