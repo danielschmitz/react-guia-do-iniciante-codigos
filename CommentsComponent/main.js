@@ -2,7 +2,7 @@
 var data = [
                     {author: "Ted", text: "First"},
                     {author: "Daniel", text: "Hello World"}
-    ];
+];
 
 var Panel = React.createClass({
   render: function() {

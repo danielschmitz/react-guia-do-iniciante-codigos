@@ -11,12 +11,12 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
 
-var b =  watchify(browserify({
+var b =  browserify({
     entries: './src/index.jsx',
     debug: true,
     extensions: ['.jsx'],
     transform: ['babelify']
-}));
+});
 
 b.on('update', process);
 gulp.task('default', process);
@@ -29,7 +29,7 @@ function process(){
     .pipe(source('main.min.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(uglify())
+    //.pipe(uglify())
     .on('error', gutil.log)
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./public/js/'));
