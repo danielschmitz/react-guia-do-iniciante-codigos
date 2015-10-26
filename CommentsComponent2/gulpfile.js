@@ -28,7 +28,7 @@ function process(){
     .pipe(source('main.min.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
-    //.pipe(uglify())
+    .pipe(uglify())
     .on('error', gutil.log)
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./public/js/'));
