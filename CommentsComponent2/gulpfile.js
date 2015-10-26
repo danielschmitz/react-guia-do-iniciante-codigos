@@ -33,8 +33,8 @@ function process(){
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./public/js/'));
 
-    gulp.src(["./node_modules/bootstrap/dist/css/bootstrap.min.css","./src/style.css"])
-    .pipe(concat('style.css'))
+     gulp.src(["./node_modules/bootstrap/dist/css/bootstrap.min.css","./src/style.css"])
+    .pipe(concat('style.min.css'))
     .pipe(uglifycss())
     .pipe(gulp.dest('./public/css/'));    
 
