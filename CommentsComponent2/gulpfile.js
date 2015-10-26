@@ -11,21 +11,20 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
 
-var b =  browserify({
+var b =  watchify(browserify({
     entries: './src/index.jsx',
     debug: true,
     extensions: ['.jsx'],
     transform: ['babelify']
-});
+}));
 
-b.on('update', process);
 gulp.task('default', process);
+b.on('update', process);
+
 
 function process(){
 
-    gutil.log(gutil.colors.red('Processando....'));
-
-    b.bundle()
+     b.bundle()
     .pipe(source('main.min.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
