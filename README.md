@@ -57,6 +57,24 @@ var CommentBox = React.createClass({
 export default CommentBox;
 ```
 
+## Comments Component 2 como instalar
+
+Ao realizar o checkout deste repositório, o diretório "CommentsComponent2" não está pronto para ser acessado pelo servidor web. Como ele foi concebido para ser uma aplicação Javascript Modular, é necessário executar alguns comandos antes de testar o diretório no navegador.
+
+Para executar estes comandos você precisa instalar Node e Npm (explicado no livro).
+
+Após realizar o checkout, execute os seguintes comandos
+
+```
+cd CommentsComponent2
+npm install
+gulp
+```
+
+O comando `gulp` ficará "escutando" alterações nos arquivos fonte do projeto, e caso haja, irá "rebuildar" o mesmo. Abra um novo terminal e digite `http-server` para instanciar o servidor web e acesse o endereço repassado pelo servidor.
+
+Caso encontre o erro que o `gulp` nao está disponível, execute o comando `npm install gulp -g`. Se necessário use o terminal em modo de administrador ou use `sudo`.
+
 
 
 
