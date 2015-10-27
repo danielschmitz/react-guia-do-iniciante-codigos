@@ -3,9 +3,10 @@
 
 Este é o código fonte do livro [React - O Guia do Iniciante](https://leanpub.com/react-guia-do-iniciate). 
 
-## Demos
+## Como testar
 
-- [CommentsComponent](http://danielschmitz.github.io/react-guia-do-iniciante-codigos/CommentsComponent/) - Capítulo 2
+Utilize o `http-server` do Node para testar os exemplos. 
+
 
 
 ## Comments Component
@@ -19,7 +20,7 @@ Veja a evolução da criação do componente.Nesta obra criaremos no capítulo 2
 ![](images/02-005.png)
 ![](images/02-006.png)
 
-## Comments Component 2
+## Comments Component 2 
 
 A pasta CommentsComponent2 é abordada no capítulo 3, possuindo a mesma funcionalidade do CommentsComponent, mas com as classes na forma modular. Utilizando várias técnicas com node, como o gulp, browserify, babelify, sourcemaps e outras, é realizado um processamento nos componentes e todos eles são compactados para um arquivo somente.
 
@@ -57,7 +58,7 @@ var CommentBox = React.createClass({
 export default CommentBox;
 ```
 
-## Comments Component 2 como instalar
+## Comments Component 2 (como instalar)
 
 Ao realizar o checkout deste repositório, o diretório "CommentsComponent2" não está pronto para ser acessado pelo servidor web. Como ele foi concebido para ser uma aplicação Javascript Modular, é necessário executar alguns comandos antes de testar o diretório no navegador.
 
