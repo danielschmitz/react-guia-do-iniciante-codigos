@@ -13,15 +13,14 @@ var UserGist = React.createClass({
   },
 
  render: function() {
-
     return (
       <div>
         Your gist url: {this.props.source}
         <br/>
         <div>Your data has {this.state.data.length} entries</div>
         <ul>
-            {this.state.data.map(function(item,i){
-                return <li><a href={item.url}>{item.description}</a></li>;
+            {this.state.data.map(function(item){
+                return <li key={item.id}><a href={item.url}>{item.description}</a></li>;
             })}
         </ul>
       </div>
